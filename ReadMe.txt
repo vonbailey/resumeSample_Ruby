@@ -17,3 +17,8 @@ Other negative cases thaty can be created:
 
 Bug:  The "Amount" field  on the transaction screen only allows for whole numbers. (Can enter 10, but cannot enter 10.05)
 Bug:  The second scenario returns the wrong amount.  Using the test criteria supplied, the program returns a total payment of $411.89, which is .10 less than the correct answer.
+
+To start application:
+1) Download files to common directory
+2) Open shell and access file directory the files were downloaded to.
+3) Type "ruby main.rb" and press enter
