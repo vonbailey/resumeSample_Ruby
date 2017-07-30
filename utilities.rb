@@ -1,5 +1,20 @@
 require 'fileutils'
 
+class CreateSeleniumConnetion
+  def makeBroswer()
+    begin
+      $log=Logging.new
+      $driver=Selenium::WebDriver.for:firefox
+      $wait = Selenium::WebDriver::Wait.new(:timeout => 10)
+      $driver.navigate.to "http://credit-test.herokuapp.com/"
+      $driver.save_screenshot($dir+'/'+'OpeningPage.png')
+      $log.logThis("Page title is #{$driver.title}")
+    rescue
+      $log.processError('ERROR-makeBrowser')
+    end
+  end   
+end
+
 class Logging
   def processError(err)
     begin

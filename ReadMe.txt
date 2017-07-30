@@ -8,7 +8,7 @@ Program Functionality:
 2) The script will create a directory where it is being run from to store a log and any screen shots used to show images of the process. 
 
 Other negative cases thaty can be created:
-1) Verify that the amount drawn cannot exceed the credit limit
+1) DONE: Verify that the amount drawn cannot exceed the credit limit
 2) Verify the correct interest is displayed in each transaction 
 3) Verify the user can successfully remove a transaction 
 4) Verify that a line of credit can be edited from opening page.
